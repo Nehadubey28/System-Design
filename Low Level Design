@@ -12,7 +12,7 @@ Class Structure
 class Car{                             
 String name;
 private String brand;
-int price;
+proctected int price;
 
 start();
 end();
@@ -25,7 +25,7 @@ stop();
 ---------------------------
 |   (+)Name:String;       |
 |   (-)brand:String;      |
-|   (+)price:int;         |
+|   (#)price:int;         |
 |------------------------ |
 |                         |
 |  (+)start():void;       |
