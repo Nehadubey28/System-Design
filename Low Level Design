@@ -121,3 +121,5 @@ Composition → Has-a (cannot live without the owner)
 
 -Behavioural
 Sequence Diagram
+Here we have to reprsent how two classes communicate
+-When a user performs an action, which object talks to which object, and in what sequence, to represent this we use Sequence Diagram.
