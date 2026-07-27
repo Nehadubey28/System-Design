@@ -50,7 +50,7 @@ Association
    -Composition
 Above all three are Composition
 
-simple association example
+-simple association example
 Association is a relationship between two independent classes where one object uses or interacts with another.
 Both objects have their own lifecycle and can exist independently.
 Example
@@ -70,4 +70,48 @@ class Customer {
     }
 }
 
+-Aggregation
+Aggregation represents a weak ownership relationship. If the container object is destroyed, the contained object still exists.
+class Player {
+    String name;
 
+    Player(String name) {
+        this.name = name;
+    }
+}
+
+class Team {
+    Player player;
+
+    Team(Player player) {
+        this.player = player;
+    }
+}
+
+Composition
+Composition represents strong ownership. If the parent object is destroyed, the child object is also destroyed.
+class Engine {
+    void start() {
+        System.out.println("Engine Started");
+    }
+}
+class Car {
+    private Engine engine;
+    Car() {
+        engine = new Engine();   // Car creates Engine
+    }
+    void startCar() {
+        engine.start();
+        System.out.println("Car Started");
+    }
+}
+
+| Relationship | Meaning                  | Independent Lifecycle? | Example                |
+| ------------ | ------------------------ | ---------------------- | ---------------------- |
+| Association  | Uses                     | ✅ Yes                  | Student → Teacher      |
+| Aggregation  | Has-a (weak ownership)   | ✅ Yes                  | Department → Professor |
+| Composition  | Has-a (strong ownership) | ❌ No                   | House → Room           |
+
+Association → Uses
+Aggregation → Has-a (can live without the owner)
+Composition → Has-a (cannot live without the owner)
