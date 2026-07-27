@@ -5,6 +5,38 @@ UML Diagram
 - Sequence Digram
 
 Class Diagram
+-class Structure
+-Association
+
+Class Structure
+class Car{                             
+String name;
+private String brand;
+int price;
+
+start();
+end();
+stop();
+}
+       <<abstract>>
+---------------------------
+|         Car             |
+|                         |
+---------------------------
+|   (+)Name:String;       |
+|   (-)brand:String;      |
+|   (+)price:int;         |
+|------------------------ |
+|                         |
+|  (+)start():void;       |
+|  (+)end():void;         |
+|  (+)stop():void;        |
+|                         |
+|------------------------ |
+
+(+) - public;
+(-) - private;
+(#) - protected;
 
 
 
