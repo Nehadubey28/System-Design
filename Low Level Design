@@ -88,8 +88,11 @@ class Team {
     }
 }
 
-Composition
+-Composition
 Composition represents strong ownership. If the parent object is destroyed, the child object is also destroyed.
+Composition is a strong 'has-a' relationship where the parent owns the child object. 
+The child object's lifecycle depends on the parent. Typically, the parent creates and manages the child object.
+
 class Engine {
     void start() {
         System.out.println("Engine Started");
@@ -115,3 +118,6 @@ class Car {
 Association → Uses
 Aggregation → Has-a (can live without the owner)
 Composition → Has-a (cannot live without the owner)
+
+-Behavioural
+Sequence Diagram
