@@ -123,3 +123,51 @@ Composition → Has-a (cannot live without the owner)
 Sequence Diagram
 Here we have to reprsent how two classes communicate
 -When a user performs an action, which object talks to which object, and in what sequence, to represent this we use Sequence Diagram.
+
+A Sequence Diagram is a UML behavioral diagram that illustrates how objects interact with each other in a specific scenario by showing the sequence of method calls over time. 
+It helps visualize the flow of execution for a use case.
+
+Driver     EntranceGate     ParkingLot      ParkingSpot     Ticket
+   |              |               |               |            |
+   | Enter()      |               |               |            |
+   |------------->|               |               |            |
+   |              | findSpot()    |               |            |
+   |              |-------------->|               |            |
+   |              |               | assignSpot()  |            |
+   |              |               |-------------> |            |
+   |              |               | <-------------|            |
+   |              | createTicket()|               |            |
+   |              |------------------------------------------->|
+   |              |<-------------------------------------------|
+   |<-------------|               |               |            |
+
+Flow
+Driver arrives.
+Entrance Gate asks Parking Lot for an available spot.
+Parking Lot assigns a parking spot.
+Entrance Gate creates a ticket.
+Ticket is returned to the driver.
+
+Components of a Sequence Diagram
+1. Actor
+The external user or system.
+User
+
+2. Object (Lifeline)
+Represents an object participating in the interaction.
+User      LoginService      Database
+
+3. Lifeline
+The vertical dashed line showing the object's existence over time.
+LoginService
+     |
+     |
+     |
+
+4. Message
+An arrow representing a method call.
+LoginUI ---- validate() ----> LoginService
+
+5. Return Message
+Shows the response.
+Database <---- User Details ---- LoginService
