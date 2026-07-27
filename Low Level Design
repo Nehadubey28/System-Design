@@ -1,7 +1,10 @@
 UML Diagram
 1.Structural (Static)- 7 type
+Represent the static architecture of a software system by showing its physical or logical components, objects, attributes, and relationships.
 - Class Diagram
+
 2.Behavioural (Dynamic) - 7 type
+they focus exclusively on what elements exist in the system rather than how they behave or change over time
 - Sequence Diagram- very rare ask in interview
 
 Class Diagram
