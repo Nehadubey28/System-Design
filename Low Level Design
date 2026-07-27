@@ -39,4 +39,35 @@ stop();
 (#) - protected;
 
 
+Association
+- Class association
+   -Inheritance(is-a relationship)
+    Represent inheritance 
+
+- Object association(has-a relationship)
+   -simple association
+   -Aggregation
+   -Composition
+Above all three are Composition
+
+simple association example
+Association is a relationship between two independent classes where one object uses or interacts with another.
+Both objects have their own lifecycle and can exist independently.
+Example
+class Bank {
+    String bankName = "HDFC";
+}
+
+class Customer {
+    String name;
+
+    Customer(String name) {
+        this.name = name;
+    }
+
+    void openAccount(Bank bank) {
+        System.out.println(name + " opened an account in " + bank.bankName);
+    }
+}
+
 
