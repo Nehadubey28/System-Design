@@ -14,5 +14,7 @@ O- open close principle(OCP)
 A class should be open for extension but close for modification.
 never touch old method, you can add new method in new class.
 
+L- Liskov substiution principle(LSP)
+subclasses should be subsitutable for their base classes.
 
 
