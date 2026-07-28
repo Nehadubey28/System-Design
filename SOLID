@@ -8,7 +8,11 @@ D- Dependency Inversion principle(DIP)
 s-single responsibilty principle
 Class should have only one responsiablity.
 One class can have more than on method but should handle same responsiablity.
-
+for example: database class, should only perform operation realted to database.
 
 O- open close principle(OCP)
 A class should be open for extension but close for modification.
+never touch old method, you can add new method in new class.
+
+
+
