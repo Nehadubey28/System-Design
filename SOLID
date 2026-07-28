@@ -6,3 +6,9 @@ I- Interface segregation principle(ISP)
 D- Dependency Inversion principle(DIP)
 
 s-single responsibilty principle
+Class should have only one responsiablity.
+One class can have more than on method but should handle same responsiablity.
+
+
+O- open close principle(OCP)
+A class should be open for extension but close for modification.
