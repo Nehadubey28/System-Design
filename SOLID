@@ -65,6 +65,13 @@ class DigitalLibrary extends Library {
 -exception type rules
 subclass should throw either same type or it's child class type exception.
 
+2.property rule
+  -class invariant
+  -Histroy constraint
+
+-class invariant
+
+
 
 
 
