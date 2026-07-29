@@ -40,7 +40,27 @@ Guidline to follow LSP
 Parent class and child class must have method with same signature, if want to override parent class method.
 
 - return type Rule
+you can add return type either child type or it's supper class, but not supper to supper class return type.
+class Book { 
+    public String getContent() { return "Standard Book Text"; }
+}
+class EBook extends Book { 
+    public String getDownloadUrl() { return "https://example.com"; }
+}
 
+class Library {
+    public Book borrowItem() {
+        return new Book();
+    }
+}
+
+// Subclass adhering to LSP (Covariant return type)
+class DigitalLibrary extends Library {
+    @Override
+    public EBook borrowItem() { // Valid: EBook is a subtype of Book
+        return new EBook();
+    }
+}
 
 
 
