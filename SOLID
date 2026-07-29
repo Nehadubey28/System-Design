@@ -62,6 +62,8 @@ class DigitalLibrary extends Library {
     }
 }
 
+-exception type rules
+subclass should throw either same type or it's child class type exception.
 
 
 
