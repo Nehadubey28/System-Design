@@ -8,12 +8,31 @@ D- Dependency Inversion principle(DIP)
 s-single responsibilty principle
 Class should have only one responsiablity.
 One class can have more than on method but should handle same responsiablity.
-for example: database class, should only perform operation realted to database.
+for example: database class, should only perform operation related to database.
 
 O- open close principle(OCP)
 A class should be open for extension but close for modification.
 never touch old method, you can add new method in new class.
+Example:
+we can achive this by creating class as interface and abstract, after that just override the method.
+
+interface PaymentMethod {
+    void pay();
+}
+
+class CreditCardPayment implements PaymentMethod {
+    @Override
+    public void play() { System.out.println("Processing credit card..."); }
+}
+
+class CashPayment implements PaymentMethod {
+    @Override
+    public void pay() { System.out.println("Processing cash..."); }
+}
+
 
 L- Liskov substiution principle(LSP)
 subclasses should be subsitutable for their base classes.
+
+
 
