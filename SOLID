@@ -76,9 +76,24 @@ Subclass should follow parent class rule.
 The subclass should follow the lifecycle behavior of parent class.
 
 3.Method Rule
--precondition
--postcondition
+-Precondition
+-Postcondition
 
+PreCondition
+-A precondition is a rule that must be true before a method runs.
 
+Precondition in Java
+Meaning: A rule or check at the start of a method.
+Purpose: Stops the method from running if the input data is bad.
+How it looks: Usually written using if statements with IllegalArgumentException.
 
+or you can use other third party libraries to check this:
+Objects.requireNonNull();
+import static com.google.common.base.Preconditions.checkArgument;
+
+-PostCondition
+A postcondition is a guarantee or rule that a method promises to make true when it finishes running successfully. 
+A subclass should stregthen the superclass.
+
+I-interface segration principal
 
