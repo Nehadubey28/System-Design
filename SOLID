@@ -70,7 +70,14 @@ subclass should throw either same type or it's child class type exception.
   -Histroy constraint
 
 -class invariant
+Subclass should follow parent class rule.
 
+-History Constraint
+The subclass should follow the lifecycle behavior of parent class.
+
+3.Method Rule
+-precondition
+-postcondition
 
 
 
