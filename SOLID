@@ -64,6 +64,17 @@ class DigitalLibrary extends Library {
 
 -exception type rules
 subclass should throw either same type or it's child class type exception.
+class DocumentReader {
+    public void read() throws IOException {}
+}
+
+class LocalFileReader extends DocumentReader {
+    @Override
+    public void read() throws FileNotFoundException {} // Valid: Narrower exception
+
+    // public void read() throws Exception {} 
+    // COMPILER ERROR: Broadens the checked exception contract!
+}
 
 2.property rule
   -class invariant
