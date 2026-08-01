@@ -91,7 +91,8 @@ The subclass should follow the lifecycle behavior of parent class.
 -Postcondition
 
 PreCondition
--A precondition is a rule that must be true before a method runs.
+-A subclass method cannot require more restrictive conditions (inputs/state) than the superclass method. 
+It can only keep them the same or make them looser (accept more inputs).
 
 Precondition in Java
 Meaning: A rule or check at the start of a method.
@@ -103,6 +104,7 @@ Objects.requireNonNull();
 import static com.google.common.base.Preconditions.checkArgument;
 
 -PostCondition
+A subclass method must guarantee at least as much as the superclass method (same or stricter outputs/state outcomes). It cannot weaken the guarantees.
 A postcondition is a guarantee or rule that a method promises to make true when it finishes running successfully. 
 A subclass should stregthen the superclass.
 
