@@ -22,7 +22,7 @@ interface PaymentMethod {
 
 class CreditCardPayment implements PaymentMethod {
     @Override
-    public void play() { System.out.println("Processing credit card..."); }
+    public void pay() { System.out.println("Processing credit card..."); }
 }
 
 class CashPayment implements PaymentMethod {
