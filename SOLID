@@ -109,4 +109,11 @@ A postcondition is a guarantee or rule that a method promises to make true when 
 A subclass should stregthen the superclass.
 
 I-interface segration principal
+The Interface Segregation Principle (ISP) states that a class should never be forced to implement an interface it does not use. 
+Instead of creating one large, "fat" interface, you should break it down into multiple smaller, highly specific ones so that clients only know about the methods they actually care about.
+Fat Interfaces: A single interface contains dozens of unrelated methods.
+Empty Implementations: A class implements an interface but leaves several methods empty or returns null/throws an exception.
+Unused Dependencies: Code depends on an entire large interface even though it only calls one specific method
+
+D-Dependency Inversion Principle(ISP)
 
