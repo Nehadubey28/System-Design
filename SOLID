@@ -14,7 +14,7 @@ O- open close principle(OCP)
 A class should be open for extension but close for modification.
 never touch old method, you can add new method in new class.
 Example:
-we can achive this by creating class as interface and abstract, after that just override the method.
+we can achive this by making class as interface and abstract, after that just override the method.
 
 interface PaymentMethod {
     void pay();
