@@ -116,4 +116,6 @@ Empty Implementations: A class implements an interface but leaves several method
 Unused Dependencies: Code depends on an entire large interface even though it only calls one specific method
 
 D-Dependency Inversion Principle(ISP)
-
+Dependency Inversion Principle- states that high-level modules should not depend on low-level modules, but both should depend on abstractions.
+It also means abstractions should not depend on details, but details should depend on abstractions.
+This design rule helps keep code flexible, easy to change, and simple to testI
