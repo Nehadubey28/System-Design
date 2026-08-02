@@ -119,3 +119,7 @@ D-Dependency Inversion Principle(ISP)
 Dependency Inversion Principle- states that high-level modules should not depend on low-level modules, but both should depend on abstractions.
 It also means abstractions should not depend on details, but details should depend on abstractions.
 This design rule helps keep code flexible, easy to change, and simple to testI
+
+Core Rules
+High-level code (main business logic) and low-level code (database or network tools) must connect through a middle layer called an interface or abstraction.
+No direct links: Your core logic should never talk directly to a specific tool or database. It only talks to the interface.
