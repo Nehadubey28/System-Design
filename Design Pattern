@@ -1,3 +1,5 @@
 Official design pattern is 23
-Strategy Design pattern
+Strategy Design pattern,
+Define a family of Algorithm, put them into separte class so that they can they can be changed at runtime.
+
 
